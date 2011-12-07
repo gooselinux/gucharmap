@@ -1,0 +1,955 @@
+diff -urN a/po/bn_IN.po b/po/bn_IN.po
+--- a/po/bn_IN.po	2010-05-05 16:23:11.460037263 +0530
++++ b/po/bn_IN.po	2010-05-05 16:23:29.094029405 +0530
+@@ -1,21 +1,21 @@
+ # translation of bn_IN.po to Bengali INDIA
+ # Bengali India translation of gucharmap
+ # This file is distributed under the same license as the gucharmap package.
+-# Copyright (C) 2003, 2006, 2009 Free Software Foundation, Inc.
++# Copyright (C) 2003, 2006, 2009, 2010 Free Software Foundation, Inc.
+ #
+ # Sayamindu Dasgupta <unmadindu@Softhome.net>, 2003.
+ # Mahay Alam Khan <makl10n@yahoo.com>, 2005.
+ # Samia Niamatullah <mailsamia2001@yahoo.com>, 2005.
+ # Runa Bhattacharjee <runabh@gmail.com>, 2006.
+-# Runa Bhattacharjee <runab@redhat.com>, 2009.
++# Runa Bhattacharjee <runab@redhat.com>, 2009, 2010.
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: bn_IN\n"
+-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gucharmap&component=general\n"
+-"POT-Creation-Date: 2009-01-12 18:59+0000\n"
+-"PO-Revision-Date: 2009-03-10 17:04+0530\n"
++"Report-Msgid-Bugs-To: \n"
++"POT-Creation-Date: 2010-03-29 14:17+0530\n"
++"PO-Revision-Date: 2010-04-15 12:49+0530\n"
+ "Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
+-"Language-Team: Bengali INDIA <discuss@lists.ankur.org.in>\n"
++"Language-Team: Bengali INDIA <anubad@lists.ankur.org.in>\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
+@@ -39,7 +39,7 @@
+ msgid "Canonical decomposition:"
+ msgstr "ক্যানোনিকাল ডিকম্পোসিশন:"
+ 
+-#: ../gucharmap/gucharmap-charmap.c:616 ../gucharmap/gucharmap-chartable.c:568
++#: ../gucharmap/gucharmap-charmap.c:616 ../gucharmap/gucharmap-chartable.c:553
+ msgid "[not a printable character]"
+ msgstr "[প্রিন্ট করারযোগ্য অক্ষর নয়]"
+ 
+@@ -49,7 +49,6 @@
+ 
+ # msgstr "অক্ষরের সাধারণ বৈশিষ্ট্য"
+ #: ../gucharmap/gucharmap-charmap.c:636
+-#| msgid "Unicode category:"
+ msgid "In Unicode since:"
+ msgstr "Unicode-এ অন্তর্ভুক্তির সময়কাল:"
+ 
+@@ -157,17 +156,17 @@
+ 
+ # msgstr "কোন টেক্সট চিহ্নিত করা হয় নি।"
+ # "নি" শব্দটা "নাই" এর চলিত রূপ। এটা সবসময় আলাদা বসবে। মাত্র কয়েক দিন আগে ব্যাপারটা জানতে পারছি ;-)
+-#: ../gucharmap/gucharmap-chartable.c:1371
++#: ../gucharmap/gucharmap-chartable.c:1399
+ msgid "Unknown character, unable to identify."
+ msgstr "অজানা অক্ষর, সনাক্ত করতে ব্যর্থ।"
+ 
+-#: ../gucharmap/gucharmap-chartable.c:1373
++#: ../gucharmap/gucharmap-chartable.c:1401
+ #: ../gucharmap/gucharmap-search-dialog.c:585
+ msgid "Not found."
+ msgstr "পাওয়া যায়নি।"
+ 
+ # msgstr "অজ্ঞাত অক্ষর, সনাক্ত করা সম্ভব হয় নি।"
+-#: ../gucharmap/gucharmap-chartable.c:1376
++#: ../gucharmap/gucharmap-chartable.c:1404
+ msgid "Character found."
+ msgstr "অক্ষর পাওয়া গেছে।"
+ 
+@@ -360,7 +359,6 @@
+ 
+ # msgstr "প্রদর্শন (_দ)"
+ #: ../gucharmap/gucharmap-window.c:246
+-#| msgid "Searching..."
+ msgid "Searching…"
+ msgstr "অনুসন্ধান করা হচ্ছে..."
+ 
+@@ -398,18 +396,14 @@
+ "Public License পড়ুন।"
+ 
+ #: ../gucharmap/gucharmap-window.c:505
+-#| msgid ""
+-#| "You should have received a copy of the GNU General Public License along "
+-#| "with Gucharmap; if not, write to the Free Software Foundation, Inc., 59 "
+-#| "Temple Place, Suite 330, Boston, MA  02111-1307  USA"
+ msgid ""
+ "You should have received a copy of the GNU General Public License along with "
+ "Gucharmap; if not, write to the Free Software Foundation, Inc., 59 Temple "
+ "Place, Suite 330, Boston, MA  02110-1301  USA"
+ msgstr ""
+ "Gucharmap-র সাথে GNU General Public License-র একটি প্রতিলিপি উপলব্ধ হওয়া উচিত; "
+-"না থাকলে নিম্নলিখিত ঠিকানায় লিখে তা সংগ্রহ করুন Free Software Foundation, Inc., 59 Temple "
+-"Place, Suite 330, Boston, MA  02110-1301  USA"
++"না থাকলে নিম্নলিখিত ঠিকানায় লিখে তা সংগ্রহ করুন Free Software Foundation, Inc., "
++"59 Temple Place, Suite 330, Boston, MA  02110-1301  USA"
+ 
+ #: ../gucharmap/gucharmap-window.c:508
+ msgid ""
+@@ -423,14 +417,10 @@
+ 
+ # msgstr "অক্ষর খুঁজে পাওয়া গেছে।" <-- "গেছে" শব্দটা কথ্য ভাষায় ব্যবহৃত হয়।
+ #: ../gucharmap/gucharmap-window.c:521 ../gucharmap/main.c:37
+-#| msgid "Character Map"
+ msgid "GNOME Character Map"
+ msgstr "GNOME অক্ষরের ম্যাপ"
+ 
+ #: ../gucharmap/gucharmap-window.c:523
+-#| msgid ""
+-#| "GNOME Character Map\n"
+-#| "based on the Unicode Character Database"
+ msgid "Based on the Unicode Character Database 5.1"
+ msgstr "Unicode Character Database 5.1-র উপর ভিত্তি করে নির্মিত"
+ 
+@@ -477,7 +467,7 @@
+ 
+ #: ../gucharmap/gucharmap-window.c:841
+ msgid "_Help"
+-msgstr "সহায়তা (_H)"
++msgstr "সাহায্য (_H)"
+ 
+ #: ../gucharmap/gucharmap-window.c:844
+ msgid "Page _Setup"
+@@ -502,7 +492,7 @@
+ 
+ #: ../gucharmap/gucharmap-window.c:879
+ msgid "_Contents"
+-msgstr "সূচি (_C)"
++msgstr "সূচিপত্র (_C)"
+ 
+ #: ../gucharmap/gucharmap-window.c:881
+ msgid "_About"
+@@ -517,7 +507,6 @@
+ msgstr "ইউনিকোড ব্লক অনুযায়ী (_U)"
+ 
+ #: ../gucharmap/gucharmap-window.c:898
+-#| msgid "Snap Columns to Power of Two"
+ msgid "Snap _Columns to Power of Two"
+ msgstr "দুইয়ের ঘাত অনুযায়ী কলাম স্ন্যাপ করা হবে (_C)"
+ 
+@@ -609,7 +598,6 @@
+ 
+ # http://www.ethnologue.com/show_language.asp?code=emk
+ #: ../gucharmap/unicode-blocks.h:30 ../gucharmap/unicode-scripts.h:63
+-#| msgid "NKo"
+ msgid "N'Ko"
+ msgstr "নকো"
+ 
+@@ -933,7 +921,6 @@
+ msgstr "ইথিওপিক এক্সটেন্ডেড"
+ 
+ #: ../gucharmap/unicode-blocks.h:103
+-#| msgid "Latin Extended-A"
+ msgid "Cyrillic Extended-A"
+ msgstr "সিরিলিক এক্সটেনডেড-A"
+ 
+@@ -1025,7 +1012,6 @@
+ msgstr "ওয়াই"
+ 
+ #: ../gucharmap/unicode-blocks.h:125
+-#| msgid "Latin Extended-B"
+ msgid "Cyrillic Extended-B"
+ msgstr "সিরিলিক এক্সটেনডেড-B"
+ 
+@@ -1059,7 +1045,6 @@
+ 
+ # msgstr "সমন্বিত কানাডীয় আদিবাসী সিলেবিক্স" <-- ভয়াবহ!
+ #: ../gucharmap/unicode-blocks.h:133 ../gucharmap/unicode-scripts.h:26
+-#| msgid "Ogham"
+ msgid "Cham"
+ msgstr "ছাম"
+ 
+@@ -1159,7 +1144,6 @@
+ msgstr "পুরাতন গ্রিক সংখ্যা"
+ 
+ #: ../gucharmap/unicode-blocks.h:154
+-#| msgid "Currency Symbols"
+ msgid "Ancient Symbols"
+ msgstr "পুরাতন চিহ্ন"
+ 
+@@ -1172,7 +1156,6 @@
+ msgstr "লাইসিয়ান"
+ 
+ #: ../gucharmap/unicode-blocks.h:157 ../gucharmap/unicode-scripts.h:25
+-#| msgid "Shavian"
+ msgid "Carian"
+ msgstr "কারিয়ান"
+ 
+@@ -1346,29 +1329,29 @@
+ 
+ # msgstr "অনুসন্ধান করার মত কিছু নেই।"
+ #. follow hig guidelines
+-#: ../gucharmap/gucharmap-search-dialog.c:739
++#: ../gucharmap/gucharmap-search-dialog.c:729
+ msgid "Find"
+ msgstr "অনুসন্ধান"
+ 
+ # msgstr "পরবর্তীটি খোঁজা হোক (_প)"
+-#: ../gucharmap/gucharmap-search-dialog.c:753
++#: ../gucharmap/gucharmap-search-dialog.c:743
+ msgid "_Previous"
+ msgstr "পূর্ববর্তী (_P)"
+ 
+-#: ../gucharmap/gucharmap-search-dialog.c:760
++#: ../gucharmap/gucharmap-search-dialog.c:750
+ msgid "_Next"
+ msgstr "পরবর্তী (_N)"
+ 
+ # "খোঁজ" নাকি "খোঁজা" ?
+-#: ../gucharmap/gucharmap-search-dialog.c:770
++#: ../gucharmap/gucharmap-search-dialog.c:765
+ msgid "_Search:"
+ msgstr "অনুসন্ধান:(_S)"
+ 
+-#: ../gucharmap/gucharmap-search-dialog.c:780
++#: ../gucharmap/gucharmap-search-dialog.c:775
+ msgid "Match _whole word"
+ msgstr "সম্পূর্ণ শব্দ মেলানো হবে (_w)"
+ 
+-#: ../gucharmap/gucharmap-search-dialog.c:785
++#: ../gucharmap/gucharmap-search-dialog.c:780
+ msgid "Search in character _details"
+ msgstr "অক্ষরের বিবরণে অনুসন্ধান করা হবে (_d)"
+ 
+diff -urN a/po/es.po b/po/es.po
+--- a/po/es.po	2010-05-05 16:23:11.448038202 +0530
++++ b/po/es.po	2010-05-05 16:23:28.661032849 +0530
+@@ -1,7 +1,7 @@
+-# translation of gucharmap.HEAD.po to Español
++# translation of es.po to Spanish
+ # translation of es.po to
+ # Spanish translation of gucharmap
+-# Copyright © 2002-2003, 2006, 2007, 2008 the Free Software Foundation, Inc.
++# Copyright © 2002-2003, 2006, 2007, 2008, 2010 the Free Software Foundation, Inc.
+ # This file is distributed under the same license as the gucharmap package.
+ #
+ # Eduardo García Cebollero <kiwnix@yahoo.es>, 2002.
+@@ -9,15 +9,15 @@
+ # Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2004, 2005, 2006.
+ # Francisco Javier F. Serrador <serrador@tecknolabs.com>, 2006.
+ # Jorge González <jorgegonz@svn.gnome.org>, 2007, 200, 2009.
++# Gladys Guerrero  <gguerrer@redhat.com>, 2010.
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: gucharmap.HEAD\n"
+-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+-"product=gucharmap&component=general\n"
++"Project-Id-Version: es\n"
++"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gucharmap&component=general\n"
+ "POT-Creation-Date: 2009-04-18 01:54+0000\n"
+-"PO-Revision-Date: 2009-05-02 12:38+0200\n"
+-"Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
+-"Language-Team: Español <gnome-es-list@gnome.org>\n"
++"PO-Revision-Date: 2010-04-14 15:11+1000\n"
++"Last-Translator: Gladys Guerrero  <gguerrer@redhat.com>\n"
++"Language-Team: Spanish <es@li.org>\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
+@@ -132,7 +132,7 @@
+ 
+ #: ../gucharmap/gucharmap-charmap.c:1178
+ msgid "Characte_r Table"
+-msgstr "_Tabla de caracteres"
++msgstr "Tabla de caracte_res"
+ 
+ #: ../gucharmap/gucharmap-charmap.c:1224
+ msgid "Character _Details"
+@@ -420,7 +420,7 @@
+ 
+ #: ../gucharmap/gucharmap-window.c:837
+ msgid "_File"
+-msgstr "_Archivo"
++msgstr "_Fichero"
+ 
+ #: ../gucharmap/gucharmap-window.c:838
+ msgid "_View"
+@@ -428,35 +428,35 @@
+ 
+ #: ../gucharmap/gucharmap-window.c:839
+ msgid "_Search"
+-msgstr "_Buscar"
++msgstr "Bu_scar"
+ 
+ #: ../gucharmap/gucharmap-window.c:840
+ msgid "_Go"
+-msgstr "_Ir a"
++msgstr "Ir a"
+ 
+ #: ../gucharmap/gucharmap-window.c:841
+ msgid "_Help"
+-msgstr "Ay_uda"
++msgstr "Ayuda"
+ 
+ #: ../gucharmap/gucharmap-window.c:844
+ msgid "Page _Setup"
+-msgstr "Config_uración de página"
++msgstr "Configuración de página"
+ 
+ #: ../gucharmap/gucharmap-window.c:865
+ msgid "Find _Next"
+-msgstr "Buscar _siguiente"
++msgstr "Buscar siguie_nte"
+ 
+ #: ../gucharmap/gucharmap-window.c:867
+ msgid "Find _Previous"
+-msgstr "Buscar _anterior"
++msgstr "Buscar _previo"
+ 
+ #: ../gucharmap/gucharmap-window.c:870
+ msgid "_Next Character"
+-msgstr "Carácter _siguiente"
++msgstr "Carácter siguie_nte"
+ 
+ #: ../gucharmap/gucharmap-window.c:872
+ msgid "_Previous Character"
+-msgstr "Carácter _anterior"
++msgstr "Carácter _previo"
+ 
+ #: ../gucharmap/gucharmap-window.c:879
+ msgid "_Contents"
+@@ -468,7 +468,7 @@
+ 
+ #: ../gucharmap/gucharmap-window.c:891
+ msgid "By _Script"
+-msgstr "Por _escritura"
++msgstr "Por _script"
+ 
+ #: ../gucharmap/gucharmap-window.c:893
+ msgid "By _Unicode Block"
+@@ -1233,23 +1233,23 @@
+ 
+ #: ../gucharmap/gucharmap-search-dialog.c:753
+ msgid "_Previous"
+-msgstr "_Anterior"
++msgstr "_Previo"
+ 
+ #: ../gucharmap/gucharmap-search-dialog.c:760
+ msgid "_Next"
+-msgstr "_Siguiente"
++msgstr "Siguie_nte"
+ 
+ #: ../gucharmap/gucharmap-search-dialog.c:775
+ msgid "_Search:"
+-msgstr "_Buscar:"
++msgstr "Bu_scar:"
+ 
+ #: ../gucharmap/gucharmap-search-dialog.c:785
+ msgid "Match _whole word"
+-msgstr "Coincidir con la palabra _completa"
++msgstr "Coincidir con la palabra completa"
+ 
+ #: ../gucharmap/gucharmap-search-dialog.c:790
+ msgid "Search in character _details"
+-msgstr "Buscar en los _detalles del carácter"
++msgstr "Buscar en _detalles de caracter"
+ 
+ #: ../gucharmap/gucharmap-block-chapters-model.c:53
+ msgid "All"
+@@ -1263,5 +1263,3 @@
+ msgid "Script"
+ msgstr "Script"
+ 
+-#~ msgid "Gucharmap"
+-#~ msgstr "Gucharmap"
+diff -urN a/po/kn.po b/po/kn.po
+--- a/po/kn.po	2010-05-05 16:23:11.396042316 +0530
++++ b/po/kn.po	2010-05-05 16:23:27.929050868 +0530
+@@ -6,8 +6,8 @@
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: gucharmap.HEAD.kn\n"
+-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gucharmap&component=general\n"
+-"POT-Creation-Date: 2009-03-15 18:41+0000\n"
++"Report-Msgid-Bugs-To: \n"
++"POT-Creation-Date: 2010-03-29 14:17+0530\n"
+ "PO-Revision-Date: 2009-03-27 12:05+0530\n"
+ "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
+ "Language-Team: Kannada <en@li.org>\n"
+@@ -33,7 +33,7 @@
+ msgid "Canonical decomposition:"
+ msgstr "ಶಾಸ್ತ್ರೀಯ(ಕನಾನಿಕಲ್) ಡಿಕಂಪೋಸಿಶನ್:"
+ 
+-#: ../gucharmap/gucharmap-charmap.c:616 ../gucharmap/gucharmap-chartable.c:568
++#: ../gucharmap/gucharmap-charmap.c:616 ../gucharmap/gucharmap-chartable.c:553
+ msgid "[not a printable character]"
+ msgstr "[ಮುದ್ರಿಸಲಾಗದ ಅಕ್ಷರಗಳು]"
+ 
+@@ -134,16 +134,16 @@
+ msgid "Character _Details"
+ msgstr "ಅಕ್ಷರಗಳ ವಿವರಗಳು(_D)"
+ 
+-#: ../gucharmap/gucharmap-chartable.c:1371
++#: ../gucharmap/gucharmap-chartable.c:1399
+ msgid "Unknown character, unable to identify."
+ msgstr "ತಿಳಿದಿಲ್ಲದ ಅಕ್ಷರ, ಗುರುತಿಸಲು ಆಗಲಿಲ್ಲ."
+ 
+-#: ../gucharmap/gucharmap-chartable.c:1373
++#: ../gucharmap/gucharmap-chartable.c:1401
+ #: ../gucharmap/gucharmap-search-dialog.c:585
+ msgid "Not found."
+ msgstr "ಕಂಡು ಬಂದಿಲ್ಲ."
+ 
+-#: ../gucharmap/gucharmap-chartable.c:1376
++#: ../gucharmap/gucharmap-chartable.c:1404
+ msgid "Character found."
+ msgstr "ಅಕ್ಷರವು ಕಂಡು ಬಂದಿದೆ."
+ 
+@@ -434,7 +434,7 @@
+ 
+ #: ../gucharmap/gucharmap-window.c:844
+ msgid "Page _Setup"
+-msgstr "ಪುಟದ ಸಂಯೋಜನೆ(_S)"
++msgstr "ಪುಟದ ಸಿದ್ಧತೆ(_S)"
+ 
+ #: ../gucharmap/gucharmap-window.c:865
+ msgid "Find _Next"
+@@ -1221,27 +1221,27 @@
+ msgstr "ಮಾಹಿತಿ"
+ 
+ #. follow hig guidelines
+-#: ../gucharmap/gucharmap-search-dialog.c:739
++#: ../gucharmap/gucharmap-search-dialog.c:729
+ msgid "Find"
+ msgstr "ಪತ್ತೆ ಹಚ್ಚು"
+ 
+-#: ../gucharmap/gucharmap-search-dialog.c:753
++#: ../gucharmap/gucharmap-search-dialog.c:743
+ msgid "_Previous"
+ msgstr "ಹಿಂದಿನ(_P)"
+ 
+-#: ../gucharmap/gucharmap-search-dialog.c:760
++#: ../gucharmap/gucharmap-search-dialog.c:750
+ msgid "_Next"
+ msgstr "ಮುಂದಕ್ಕೆ (_N)"
+ 
+-#: ../gucharmap/gucharmap-search-dialog.c:770
++#: ../gucharmap/gucharmap-search-dialog.c:765
+ msgid "_Search:"
+ msgstr "ಹುಡುಕು(_S):"
+ 
+-#: ../gucharmap/gucharmap-search-dialog.c:780
++#: ../gucharmap/gucharmap-search-dialog.c:775
+ msgid "Match _whole word"
+ msgstr "ಕೇವಲ ಸಂಪೂರ್ಣ ಪದಕ್ಕಾಗಿ ಮಾತ್ರ ಹುಡುಕು (_e)"
+ 
+-#: ../gucharmap/gucharmap-search-dialog.c:785
++#: ../gucharmap/gucharmap-search-dialog.c:780
+ msgid "Search in character _details"
+ msgstr "ಅಕ್ಷರ ವಿವರಗಳಲ್ಲಿ ಹುಡುಕು(_d)"
+ 
+@@ -1256,4 +1256,3 @@
+ #: ../gucharmap/gucharmap-script-chapters-model.c:134
+ msgid "Script"
+ msgstr "ಸ್ಕ್ರಿಪ್ಟ್"
+-
+diff -urN a/po/ta.po b/po/ta.po
+--- a/po/ta.po	2010-05-05 16:23:11.520185828 +0530
++++ b/po/ta.po	2010-05-05 16:23:29.650154662 +0530
+@@ -6,21 +6,22 @@
+ # Dinesh Nadarajah <n_dinesh@yahoo.com>, 2003.
+ # Jayaradha N <jaya@pune.redhat.com>, 2004.
+ # Dr.T.Vasudevan <agnihot3@gmail.com>, 2007, 2008.
+-# I. Felix <ifelix@redhat.com>, 2009.
++# I. Felix <ifelix@redhat.com>, 2009, 2010.
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: gucharmap.HEAD.ta\n"
+-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gucharmap&component=general\n"
+-"POT-Creation-Date: 2009-01-12 18:59+0000\n"
+-"PO-Revision-Date: 2009-03-10 16:17+0530\n"
+-"Last-Translator: I. Felix <ifelix@redhat.com>\n"
+-"Language-Team: Tamil <fedora-trans-ta@redhat.com>\n"
++"Report-Msgid-Bugs-To: \n"
++"POT-Creation-Date: 2010-03-29 14:17+0530\n"
++"PO-Revision-Date: 2010-04-16 07:04+0530\n"
++"Last-Translator: \n"
++"Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
+ "0500\n"
+-"X-Generator: KBabel 1.11.4\n"
+-"Plural-Forms: nplurals=2; plural=(n!=1);\\n\n"
++"X-Generator: Lokalize 1.0\n"
++"Plural-Forms: nplurals=2; plural=(n!=1);\\n"
++"\n"
+ "\n"
+ 
+ #: ../gucharmap.desktop.in.in.h:1 ../gucharmap/gucharmap-window.c:905
+@@ -36,7 +37,7 @@
+ msgid "Canonical decomposition:"
+ msgstr "விதிமுறைப்படி சிதை:"
+ 
+-#: ../gucharmap/gucharmap-charmap.c:616 ../gucharmap/gucharmap-chartable.c:568
++#: ../gucharmap/gucharmap-charmap.c:616 ../gucharmap/gucharmap-chartable.c:553
+ msgid "[not a printable character]"
+ msgstr "[அச்சடிக்கப்படாத எழுத்து]"
+ 
+@@ -46,12 +47,12 @@
+ 
+ #: ../gucharmap/gucharmap-charmap.c:636
+ msgid "In Unicode since:"
+-msgstr "யூனிக்கோடில் ..இருந்து:"
++msgstr "யூனிக்கோடில் இருந்து:"
+ 
+ #. character category
+ #: ../gucharmap/gucharmap-charmap.c:640
+ msgid "Unicode category:"
+-msgstr "யூனிகோடு வகை"
++msgstr "யூனிகோடு வகை:"
+ 
+ #: ../gucharmap/gucharmap-charmap.c:649
+ msgid "Various Useful Representations"
+@@ -79,15 +80,15 @@
+ 
+ #: ../gucharmap/gucharmap-charmap.c:706
+ msgid "Alias names:"
+-msgstr "மறு பெயர்"
++msgstr "மறு பெயர்கள்:"
+ 
+ #: ../gucharmap/gucharmap-charmap.c:715
+ msgid "Notes:"
+-msgstr "குறிப்பு:"
++msgstr "குறிப்புகள்:"
+ 
+ #: ../gucharmap/gucharmap-charmap.c:724
+ msgid "See also:"
+-msgstr "இதையும் பார்"
++msgstr "இதையும் பார்:"
+ 
+ #: ../gucharmap/gucharmap-charmap.c:733
+ msgid "Approximate equivalents:"
+@@ -103,11 +104,11 @@
+ 
+ #: ../gucharmap/gucharmap-charmap.c:763
+ msgid "Definition in English:"
+-msgstr "ஆங்கில குறிப்பு"
++msgstr "ஆங்கில குறிப்பு:"
+ 
+ #: ../gucharmap/gucharmap-charmap.c:768
+ msgid "Mandarin Pronunciation:"
+-msgstr "மேன்ட்ரெயில் உச்சரிப்பு"
++msgstr "மேன்ட்ரெயில் உச்சரிப்பு:"
+ 
+ #: ../gucharmap/gucharmap-charmap.c:773
+ msgid "Cantonese Pronunciation:"
+@@ -115,40 +116,40 @@
+ 
+ #: ../gucharmap/gucharmap-charmap.c:778
+ msgid "Japanese On Pronunciation:"
+-msgstr "ஜப்பானிய ஆன் உச்சரிப்பு"
++msgstr "ஜப்பானிய ஆன் உச்சரிப்பு:"
+ 
+ #: ../gucharmap/gucharmap-charmap.c:783
+ msgid "Japanese Kun Pronunciation:"
+-msgstr "ஜப்பானிய குன் உச்சரிப்பு"
++msgstr "ஜப்பானிய குன் உச்சரிப்பு:"
+ 
+ #: ../gucharmap/gucharmap-charmap.c:788
+ msgid "Tang Pronunciation:"
+-msgstr "டாங் உச்சரிப்பு"
++msgstr "டாங் உச்சரிப்பு:"
+ 
+ #: ../gucharmap/gucharmap-charmap.c:793
+ msgid "Korean Pronunciation:"
+-msgstr "கொரியன் உச்சரிப்பு"
++msgstr "கொரியன் உச்சரிப்பு:"
+ 
+ #: ../gucharmap/gucharmap-charmap.c:1178
+ msgid "Characte_r Table"
+-msgstr "(_r)எழுத்துரு பட்டியல்"
++msgstr "எழுத்துரு பட்டியல் (_r)"
+ 
+ #: ../gucharmap/gucharmap-charmap.c:1224
+ msgid "Character _Details"
+-msgstr "(_D)எழுத்துரு விளக்கம்"
++msgstr "எழுத்துரு விளக்கங்கள் (_D)"
+ 
+-#: ../gucharmap/gucharmap-chartable.c:1371
++#: ../gucharmap/gucharmap-chartable.c:1399
+ msgid "Unknown character, unable to identify."
+-msgstr "தெரியாத எழுத்து, கண்டுபிடிக்க முடியவில்லை"
++msgstr "தெரியாத எழுத்து, கண்டுபிடிக்க முடியவில்லை."
+ 
+-#: ../gucharmap/gucharmap-chartable.c:1373
++#: ../gucharmap/gucharmap-chartable.c:1401
+ #: ../gucharmap/gucharmap-search-dialog.c:585
+ msgid "Not found."
+-msgstr "கிடைக்கவில்லை"
++msgstr "கிடைக்கவில்லை."
+ 
+-#: ../gucharmap/gucharmap-chartable.c:1376
++#: ../gucharmap/gucharmap-chartable.c:1404
+ msgid "Character found."
+-msgstr "எழுத்து கிடைத்தது"
++msgstr "எழுத்து கிடைத்தது."
+ 
+ #: ../gucharmap/gucharmap-chartable-accessible.c:771
+ msgid "Character Table"
+@@ -168,7 +169,7 @@
+ 
+ #: ../gucharmap/gucharmap-settings.c:71
+ msgid "GConf could not be initialized."
+-msgstr "ஜிகான்ஃப் ஐ துவக்க முடியவில்லை"
++msgstr "ஜிகான்ஃப் ஐ துவக்க முடியவில்லை."
+ 
+ #. Unicode assigns "Common" as the script name for any character not
+ #. * specifically listed in Scripts.txt
+@@ -183,7 +184,7 @@
+ 
+ #: ../gucharmap/gucharmap-unicode-info.c:96
+ msgid "<Private Use High Surrogate>"
+-msgstr "<தனிப்பட்ட அதிக மாற்றாள் பயன்படுத்தல்>ல்>"
++msgstr "<தனிப்பட்ட அதிக மாற்றாள் பயன்படுத்தல்>"
+ 
+ #: ../gucharmap/gucharmap-unicode-info.c:98
+ msgid "<Low Surrogate>"
+@@ -239,7 +240,7 @@
+ 
+ #: ../gucharmap/gucharmap-unicode-info.c:130
+ msgid "Letter, Titlecase"
+-msgstr "எழுத்து,முதலெழுத்து பெரியது"
++msgstr "எழுத்து, முதலெழுத்து பெரியது"
+ 
+ #: ../gucharmap/gucharmap-unicode-info.c:131
+ msgid "Letter, Uppercase"
+@@ -382,18 +383,16 @@
+ "எப்போதுமே யூனிகோடு இணையத்தில் காணலாம்: http://www.unicode.org/copyright.html"
+ 
+ #: ../gucharmap/gucharmap-window.c:521 ../gucharmap/main.c:37
+-#| msgid "Character Map"
+ msgid "GNOME Character Map"
+ msgstr "GNOME எழுத்து ஒப்பீடு"
+ 
+ #: ../gucharmap/gucharmap-window.c:523
+-#| msgid "GNOME Character Map based on the Unicode Character Database"
+ msgid "Based on the Unicode Character Database 5.1"
+ msgstr "Unicode Character Database 5.1ஐ அடிப்படையாக கொண்டது"
+ 
+ #: ../gucharmap/gucharmap-window.c:532
+ msgid "translator-credits"
+-msgstr "மொழிபெயர்ப்பர் - நன்றி அறிதல்"
++msgstr "Felix <ifelix@redhat.com> Dr.T.Vasudevan <agnihot3@gmail.com> "
+ 
+ #: ../gucharmap/gucharmap-window.c:607 ../gucharmap/gucharmap-window.c:874
+ msgid "Next Script"
+@@ -413,23 +412,23 @@
+ 
+ #: ../gucharmap/gucharmap-window.c:837
+ msgid "_File"
+-msgstr "_F கோப்பு"
++msgstr "கோப்பு (_F)"
+ 
+ #: ../gucharmap/gucharmap-window.c:838
+ msgid "_View"
+-msgstr "_V காட்சி"
++msgstr "காட்சி (_V)"
+ 
+ #: ../gucharmap/gucharmap-window.c:839
+ msgid "_Search"
+-msgstr "_S தேடுக"
++msgstr "தேடு (_S )"
+ 
+ #: ../gucharmap/gucharmap-window.c:840
+ msgid "_Go"
+-msgstr "_G போ"
++msgstr "செல் (_G )"
+ 
+ #: ../gucharmap/gucharmap-window.c:841
+ msgid "_Help"
+-msgstr "_H உதவி"
++msgstr "உதவி (_H )"
+ 
+ #: ../gucharmap/gucharmap-window.c:844
+ msgid "Page _Setup"
+@@ -437,47 +436,47 @@
+ 
+ #: ../gucharmap/gucharmap-window.c:865
+ msgid "Find _Next"
+-msgstr "(_N)அடுத்ததை கண்டுபிடி"
++msgstr "அடுத்ததை கண்டுபிடி (_N)"
+ 
+ #: ../gucharmap/gucharmap-window.c:867
+ msgid "Find _Previous"
+-msgstr "(_P)முந்தையதை கண்டுபிடி"
++msgstr "முந்தையதை கண்டுபிடி (_P)"
+ 
+ #: ../gucharmap/gucharmap-window.c:870
+ msgid "_Next Character"
+-msgstr "(_N)அடுத்த எழுத்து"
++msgstr "அடுத்த எழுத்து (_N)"
+ 
+ #: ../gucharmap/gucharmap-window.c:872
+ msgid "_Previous Character"
+-msgstr "(_P)முந்தைய எழுத்து"
++msgstr "முந்தைய எழுத்து (_P)"
+ 
+ #: ../gucharmap/gucharmap-window.c:879
+ msgid "_Contents"
+-msgstr "_C உள்ளடக்கங்கள்"
++msgstr "உள்ளடக்கங்கள் (_C )"
+ 
+ #: ../gucharmap/gucharmap-window.c:881
+ msgid "_About"
+-msgstr "_A பற்றி"
++msgstr "பற்றி (_A )"
+ 
+ #: ../gucharmap/gucharmap-window.c:891
+ msgid "By _Script"
+-msgstr "(_S)சிறுநிரல் படி"
++msgstr "சிறுநிரல் படி (_S)"
+ 
+ #: ../gucharmap/gucharmap-window.c:893
+ msgid "By _Unicode Block"
+-msgstr "(_U)யூனிக்கோடு கட்டங்கள் படி"
++msgstr "யூனிக்கோடு கட்டங்கள் படி (_U)"
+ 
+ #: ../gucharmap/gucharmap-window.c:898
+ msgid "Snap _Columns to Power of Two"
+-msgstr "_C நெடுவரிசைகளை இரண்டின்  வர்க்கங்களாக பிரி"
++msgstr "நெடுவரிசைகளை இரண்டின்  வர்க்கங்களாக பிரி (_C )"
+ 
+ #: ../gucharmap/gucharmap-window.c:967
+ msgid "_Text to copy:"
+-msgstr "(_T)படியெடுக்க வேண்டிய உரை:"
++msgstr "படியெடுக்க வேண்டிய உரை (_T):"
+ 
+ #: ../gucharmap/gucharmap-window.c:974
+ msgid "Copy to the clipboard."
+-msgstr "தற்காலிக நினைவிடத்தில் படியெடு"
++msgstr "தற்காலிக நினைவிடத்தில் படியெடு."
+ 
+ #: ../gucharmap/main.c:55
+ msgid "Font to start with; ex: 'Serif 27'"
+@@ -601,7 +600,7 @@
+ 
+ #: ../gucharmap/unicode-blocks.h:42 ../gucharmap/unicode-scripts.h:53
+ msgid "Lao"
+-msgstr "லாவோ"
++msgstr "லோ"
+ 
+ #: ../gucharmap/unicode-blocks.h:43 ../gucharmap/unicode-scripts.h:88
+ msgid "Tibetan"
+@@ -757,7 +756,7 @@
+ 
+ #: ../gucharmap/unicode-blocks.h:81
+ msgid "Miscellaneous Technical"
+-msgstr "மற்ற தொழிநுட்ப"
++msgstr "மற்ற தொழிநுட்பம்"
+ 
+ #: ../gucharmap/unicode-blocks.h:82
+ msgid "Control Pictures"
+@@ -1021,7 +1020,7 @@
+ 
+ #: ../gucharmap/unicode-blocks.h:147
+ msgid "Arabic Presentation Forms-B"
+-msgstr "அரபிம் முன்வைப்பு படிவம்-B"
++msgstr "அரபிக் முன்வைப்பு படிவம்-B"
+ 
+ #: ../gucharmap/unicode-blocks.h:148
+ msgid "Halfwidth and Fullwidth Forms"
+@@ -1065,7 +1064,7 @@
+ 
+ #: ../gucharmap/unicode-blocks.h:158 ../gucharmap/unicode-scripts.h:67
+ msgid "Old Italic"
+-msgstr "பழைய இத்தாலிய"
++msgstr "பழைய இத்தாலி"
+ 
+ #: ../gucharmap/unicode-blocks.h:159 ../gucharmap/unicode-scripts.h:38
+ msgid "Gothic"
+@@ -1157,7 +1156,7 @@
+ 
+ #: ../gucharmap/unicode-blocks.h:181
+ msgid "Tags"
+-msgstr "ஒட்டுகள் (Tags)"
++msgstr "ஒட்டுகள் "
+ 
+ #: ../gucharmap/unicode-blocks.h:182
+ msgid "Variation Selectors Supplement"
+@@ -1181,11 +1180,11 @@
+ 
+ #: ../gucharmap/unicode-scripts.h:31
+ msgid "Cypriot"
+-msgstr "சைபீரிய"
++msgstr "சைபீரியட்"
+ 
+ #: ../gucharmap/unicode-scripts.h:39
+ msgid "Greek"
+-msgstr "க்ரேக்க"
++msgstr "க்ரீக்"
+ 
+ #: ../gucharmap/unicode-scripts.h:42
+ msgid "Han"
+@@ -1220,29 +1219,29 @@
+ msgstr "தகவல்"
+ 
+ #. follow hig guidelines
+-#: ../gucharmap/gucharmap-search-dialog.c:739
++#: ../gucharmap/gucharmap-search-dialog.c:729
+ msgid "Find"
+ msgstr "கண்டுபிடி"
+ 
+-#: ../gucharmap/gucharmap-search-dialog.c:753
++#: ../gucharmap/gucharmap-search-dialog.c:743
+ msgid "_Previous"
+-msgstr "(_P)முந்தைய"
++msgstr "முந்தைய (_P)"
+ 
+-#: ../gucharmap/gucharmap-search-dialog.c:760
++#: ../gucharmap/gucharmap-search-dialog.c:750
+ msgid "_Next"
+-msgstr "(_N)அடுத்து"
++msgstr "அடுத்து (_N)"
+ 
+-#: ../gucharmap/gucharmap-search-dialog.c:770
++#: ../gucharmap/gucharmap-search-dialog.c:765
+ msgid "_Search:"
+-msgstr "_தேடுக:"
++msgstr "தேடு (_S):"
+ 
+-#: ../gucharmap/gucharmap-search-dialog.c:780
++#: ../gucharmap/gucharmap-search-dialog.c:775
+ msgid "Match _whole word"
+-msgstr "_ம முழு சொல்லை ஒப்பிடுக"
++msgstr "முழு சொல்லை ஒப்பிடுக (_w)"
+ 
+-#: ../gucharmap/gucharmap-search-dialog.c:785
++#: ../gucharmap/gucharmap-search-dialog.c:780
+ msgid "Search in character _details"
+-msgstr "(_D)எழுத்துரு விளக்கத்தில் தேடுக"
++msgstr "எழுத்துரு விளக்கத்தில் தேடுக (_d)"
+ 
+ #: ../gucharmap/gucharmap-block-chapters-model.c:53
+ msgid "All"
+diff -urN a/po/zh_CN.po b/po/zh_CN.po
+--- a/po/zh_CN.po	2010-05-05 16:23:11.394029116 +0530
++++ b/po/zh_CN.po	2010-05-05 16:23:28.277029154 +0530
+@@ -1,24 +1,26 @@
++# translation of zh_CN.po to Wei Liu
+ # gucharmap zh_CN.po
+-# Copyright (C) 2003-2009 Free Software Foundation, Inc.
++# Copyright (C) 2003-2009, 2010 Free Software Foundation, Inc.
+ # This file is distributed under the same license as the gucharmap package.
+-# LIANG ChangTai <beos@turbolinux.com.cn>, 2003
+-# Funda Wang <fundawang@linux.net.cn>, 2004
+-# Cai Qian <caiqian@gnome.org>, 2005
++#
++# LIANG ChangTai <beos@turbolinux.com.cn>, 2003.
++# Funda Wang <fundawang@linux.net.cn>, 2004.
++# Cai Qian <caiqian@gnome.org>, 2005.
+ # Ray Wang <raywang@gnome.org>, 2009.
+ # Aron Xu <aronxu@gnome.org>, 2009.
+-#
++# Leah Liu <lliu@redhat.com>, 2010.
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: gucharmap\n"
+-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+-"product=gucharmap&component=general\n"
+-"POT-Creation-Date: 2009-07-18 05:31+0000\n"
+-"PO-Revision-Date: 2009-04-30 16:48+0800\n"
+-"Last-Translator: Aron Xu <aronxu@gnome.org>\n"
+-"Language-Team: Chinese (Simplified) <i18n-zh@googlegroups.com>\n"
++"Project-Id-Version: zh_CN\n"
++"Report-Msgid-Bugs-To: \n"
++"POT-Creation-Date: 2010-03-29 14:17+0530\n"
++"PO-Revision-Date: 2010-04-12 20:33+1000\n"
++"Last-Translator: Leah Liu <lliu@redhat.com>\n"
++"Language-Team: Wei Liu\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
++"X-Generator: KBabel 1.11.4\n"
+ 
+ #: ../gucharmap.desktop.in.in.h:1 ../gucharmap/gucharmap-window.c:905
+ #: ../gucharmap/main.c:80
+@@ -551,7 +553,7 @@
+ 
+ #: ../gucharmap/unicode-blocks.h:30 ../gucharmap/unicode-scripts.h:63
+ msgid "N'Ko"
+-msgstr ""
++msgstr "N'Ko"
+ 
+ #: ../gucharmap/unicode-blocks.h:31 ../gucharmap/unicode-scripts.h:34
+ msgid "Devanagari"
+@@ -651,7 +653,7 @@
+ 
+ #: ../gucharmap/unicode-blocks.h:55 ../gucharmap/unicode-scripts.h:23
+ msgid "Buhid"
+-msgstr ""
++msgstr "Buhid"
+ 
+ #: ../gucharmap/unicode-blocks.h:56 ../gucharmap/unicode-scripts.h:82
+ msgid "Tagbanwa"
+@@ -699,7 +701,7 @@
+ 
+ #: ../gucharmap/unicode-blocks.h:67 ../gucharmap/unicode-scripts.h:66
+ msgid "Ol Chiki"
+-msgstr ""
++msgstr "Ol Chiki"
+ 
+ #: ../gucharmap/unicode-blocks.h:68
+ msgid "Phonetic Extensions"
+@@ -927,7 +929,7 @@
+ 
+ #: ../gucharmap/unicode-blocks.h:124 ../gucharmap/unicode-scripts.h:91
+ msgid "Vai"
+-msgstr ""
++msgstr "Vai"
+ 
+ #: ../gucharmap/unicode-blocks.h:125
+ msgid "Cyrillic Extended-B"
+@@ -943,11 +945,11 @@
+ 
+ #: ../gucharmap/unicode-blocks.h:128 ../gucharmap/unicode-scripts.h:79
+ msgid "Syloti Nagri"
+-msgstr ""
++msgstr "Syloti Nagri"
+ 
+ #: ../gucharmap/unicode-blocks.h:129
+ msgid "Phags-pa"
+-msgstr ""
++msgstr "Phags-pa"
+ 
+ #: ../gucharmap/unicode-blocks.h:130 ../gucharmap/unicode-scripts.h:75
+ msgid "Saurashtra"
+@@ -955,7 +957,7 @@
+ 
+ #: ../gucharmap/unicode-blocks.h:131 ../gucharmap/unicode-scripts.h:50
+ msgid "Kayah Li"
+-msgstr ""
++msgstr "Kayah Li"
+ 
+ #: ../gucharmap/unicode-blocks.h:132 ../gucharmap/unicode-scripts.h:73
+ msgid "Rejang"
+@@ -1207,7 +1209,7 @@
+ 
+ #: ../gucharmap/unicode-scripts.h:71
+ msgid "Phags Pa"
+-msgstr ""
++msgstr "Phags Pa"
+ 
+ #: ../gucharmap/unicode-scripts.h:92
+ msgid "Yi"
+@@ -1251,9 +1253,6 @@
+ msgstr "Unicode 区块"
+ 
+ #: ../gucharmap/gucharmap-script-chapters-model.c:134
+-#, fuzzy
+ msgid "Script"
+-msgstr "语言"
++msgstr "脚本"
+ 
+-#~ msgid "Gucharmap"
+-#~ msgstr "Gucharmap"
